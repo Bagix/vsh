@@ -1,0 +1,18 @@
+.contact-us {
+  background-image: url("./images/about-us/contact-us_services.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 0;
+  @include breakpoint('large-up') {
+    padding: 150px 0;
+  }
+  .title {
+    margin: 15px 0 30px;
+    @include breakpoint('large-up') {
+      margin: 20px 0 45px;
+      font-size: 55px;
+      line-height: 67px;
+    }
+  }
+}

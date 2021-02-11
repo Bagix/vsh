@@ -1,0 +1,192 @@
+body, html {
+  &.hold {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+
+.mobile-nav-bar {
+  @include breakpoint('large-up') {
+    display: none;
+  }
+  position: relative;
+  background-color: $blue;
+  overflow: auto;
+  z-index: 10;
+  padding: 15px 22px;
+  .logo {
+    float: left;
+    width: 240px;
+  }
+  .trigger {
+    float: right;
+    width: 18px;
+  }
+}
+
+#nav {
+  position: fixed;
+  background-color: $white;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 45px 0;
+  z-index: 100;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: transform .3s linear;
+  @include breakpoint('large-up') {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: initial;
+    overflow-y: visible;
+    padding: 30px 25px 30px 85px;
+    transform: translateX(0);
+  }
+  &.open {
+    transform: translateX(0);
+  }
+  .wrapper {
+    overflow: auto;
+    @include breakpoint('large-down') {
+      padding: 0 30px;
+    }
+  }
+  .logo {
+    float: left;
+  }
+  .close-icon {
+    float: right;
+    @include breakpoint('large-up') {
+      display: none;
+    }
+  }
+  .menu {
+    margin-top: 55px;
+    @include breakpoint('large-up') {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+    }
+    &>li {
+      text-align: center;
+      @include breakpoint('large-up') {
+        margin: 0 15px;
+        &:first-child {
+          order: 1;
+        }
+        &:nth-child(2) {
+          order: 2;
+        }
+        &:nth-child(3) {
+          order: 3;
+        }
+        &:nth-child(4) {
+          order: 6;
+        }
+        &:nth-child(5) {
+          order: 4;
+        }
+        &:last-child {
+          order: 5;
+        }
+      }
+      &:nth-child(3) {
+        @include breakpoint('x-large-up') {
+          margin-right: 120px;
+        }
+      }
+      a {
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 35px 0;
+        cursor: pointer;
+        @include breakpoint('large-up') {
+          font-size: 18px;
+          padding: 5px 24px;
+        }
+        &:hover {
+          color: $blue;
+        }
+      }
+      &.lang-switcher {
+        @include breakpoint('large-down') {
+          text-align: left;
+          margin-top: 20px;
+          padding-left: 30px;
+        }
+      }
+      &.contact a {
+        color: $blue;
+        @include breakpoint('large-up') {
+          border: 2px solid $blue;
+          border-radius: 100px;
+          transition: all .3s linear;
+          &:hover {
+            background-color: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+    .sub-menu {
+      max-height: 0;
+      padding: 0 20%;
+      background-color: $lightblue;
+      overflow: hidden;
+      transition: max-height .3s linear;
+      @include breakpoint('large-up') {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        min-width: 236px;
+        top: 45px;
+        padding: 0;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(4, 59, 85, 0.05), -2px -2px 4px rgba(4, 59, 85, 0.05);
+      }
+      &> li {
+        &> a {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: left;
+        }
+      }
+      &.open {
+        max-height: 660px;
+      }
+      &-trigger {
+        @include breakpoint('large-up') {
+          position: relative;
+        }
+        a > i {
+          margin-top: 0;
+        }
+      }
+      li {
+        @include breakpoint('large-up') {
+          &:first-child {
+            padding-top: 30px;
+          }
+          &:last-child {
+            padding-bottom: 30px;
+          }
+        }
+      }
+      a {
+        @include breakpoint('large-up') {
+          padding: 7.5px 30px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+$breakpoints: (
+  "small-up": (min-width: 576px),
+  "medium-up": (min-width: 768px),
+  "large-up": (min-width: 992px),
+  "x-large-up": (min-width: 1200px),
+  "xx-large-up": (min-width: 1400px),
+  "xxx-large-up": (min-width: 1600px),
+  "small-down": (max-width: 575px),
+  "medium-down": (max-width: 767px),
+  "large-down": (max-width: 991px),
+  "x-large-down": (max-width: 1199px),
+  "xx-large-down": (max-width: 1399px),
+  "xxx-large-down": (max-width: 1599px)
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn"t exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin slick-arrows {
+  .slick {
+    &-prev,
+    &-next {
+      position: absolute;
+      width: 40px;
+      top: 40%;
+      border: none;
+      color: transparent;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position: center;
+      background-size: cover;
+      z-index: 40;
+    }
+
+    &-prev {
+      left: 15px;
+      background-image: url('./images/models/arrow-left-blue.png');
+    }
+
+    &-next {
+      right: 15px;
+      background-image: url('./images/models/arrow-right-blue.png');
+    }
+  }
+}

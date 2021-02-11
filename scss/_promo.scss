@@ -1,0 +1,91 @@
+.promo {
+  &-oportunities {
+    padding-bottom: 75px;
+    @include breakpoint('large-up') {
+      padding-bottom: 170px;
+    }
+    @include breakpoint('large-up') {
+      display: flex;
+      flex-direction: column;
+    }
+    .eyebrow {
+      @include breakpoint('large-up') {
+        order: 2;
+        margin-top: -500px;
+      }
+    }
+    .title {
+      @include breakpoint('large-up') {
+        order: 3;
+      }
+    }
+    .video-box {
+      position: relative;
+      @include breakpoint('large-up') {
+       order: 1;
+       align-self: flex-end;
+      }
+      .image-box {
+        position: relative;
+        width: 57vw;
+        margin-left: 18%;
+        max-width: 320px;
+        z-index: 20;
+        @include breakpoint('medium-up') {
+          margin-left: 28%;
+        }
+        @include breakpoint('large-up') {
+          margin-left: 0;
+          max-width: 378px;
+         }
+      }
+      video {
+        position: absolute;
+        width: 51vw;
+        height: auto;
+        max-width: 286px;
+        top: 3.5%;
+        left: 21.3%;
+        z-index: 10;
+        @include breakpoint('medium-up') {
+          left: 30.3%;
+        }
+        @include breakpoint('large-up') {
+          top: 3.6%;
+          left: 4.5%;
+          max-width: 338px;
+         }
+      }
+    }
+    .wrapper {
+      margin-top: 36px;
+      margin-left: 21%;
+      @include breakpoint('medium-up') {
+        margin-left: 30.0%;
+      }
+      @include breakpoint('large-up') {
+        order: 4;
+        max-width: 540px;
+        margin-left: 0;
+      }
+    }
+    .link {
+      margin-top: 30px;
+      @include breakpoint('large-up') {
+        margin-top: 90px;
+      }
+    }
+  }
+
+  &-personalization {
+    @include breakpoint('large-up') {
+      text-align: center;
+    }
+  }
+
+  &-see-more {
+    img {
+      display: block;
+    }
+  }
+}

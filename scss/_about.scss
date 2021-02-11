@@ -1,0 +1,123 @@
+.about-us {
+  &-header {
+    padding-bottom: 60px;
+  }
+  &-philosophy {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    @include breakpoint('large-up') {
+      padding-bottom: 90px;
+    }
+    .title {
+      @include breakpoint('large-up') {
+        order: 1;
+      }
+    }
+    .image-box {
+      align-self: flex-end;
+      max-width: 276px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      @include breakpoint('large-up') {
+        max-width: 438px;
+        order: 3;
+        margin-top: -188px;
+      }
+    }
+    .text {
+      @extend %text;
+      @include breakpoint('large-up') {
+        order: 2;
+        max-width: 426px;
+      }
+      @include breakpoint('x-large-up') {
+        max-width: 540px;
+      }
+    }
+  }
+  &-values {
+    @include breakpoint('large-up') {
+      padding-bottom: 90px;
+    }
+    &>.title {
+      @include breakpoint('large-up') {
+        text-align: center;
+      }
+    }
+    &>.text:first-of-type {
+      width: 70vw;
+      @include breakpoint('medium-up') {
+        width: 40vw;
+        max-width: 730px;
+      }
+      @include breakpoint('large-up') {
+        width: initial;
+        margin: auto;
+      }
+    }
+    .value-box {
+      padding: 45px 0 35px;
+      @include breakpoint('large-up') {
+        padding-top: 90px;
+      }
+      overflow: auto;
+      .title {
+        text-align: center;
+        @include breakpoint('large-up') {
+          width: 350px;
+        }
+        @include breakpoint('x-large-up') {
+          margin-left: 50px;
+        }
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include breakpoint('large-up') {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+      .image-box {
+        max-width: 451px;
+        margin-bottom: 45px;
+      }
+      .text {
+        max-width: 324px;
+        @include breakpoint('large-up') {
+          max-width: 570px;
+          padding-left: 40px;
+        }
+      }
+    }
+    &> .text:last-child {
+      max-width: 730px;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+  }
+  &-events {
+    padding-top: 45px;
+    padding-bottom: 75px;
+    @include breakpoint('large-up') {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+    .title {
+      @include breakpoint('large-up') {
+        text-align: center;
+      }
+    }
+    .image-box {
+      margin-bottom: 30px;
+      @include breakpoint('large-up') {
+        margin-bottom: 60px;
+      }
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+}

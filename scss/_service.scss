@@ -1,0 +1,230 @@
+.service {
+  &-header {
+    .wrapper {
+      max-width: 890px;
+      margin: 50px auto 0;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 0;
+      grid-template-areas: 
+      "models ar";
+
+      @include breakpoint('large-up') {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 20px;
+        grid-template-areas: 
+        "promo games models"
+        "ar exp training";
+        margin-top: 90px;
+      }
+
+      .mini-box {
+        width: 180px;
+        margin: auto;
+      }
+
+      .pc-only {
+        display: none;
+        @include breakpoint('large-up') {
+          display: block;
+        }
+      }
+      .promo {grid-area: promo;}
+      .games {grid-area: games;}
+      .models {grid-area: models;}
+      .ar {grid-area: ar;}
+      .exp {grid-area: exp;}
+      .training {grid-area: training;}
+    }
+  }
+
+  &-services {
+    padding-top: 60px;
+    background-color: $lightblue;
+
+    .title {
+      @include breakpoint('medium-up') {
+        text-align: center;
+        margin-bottom: 90px;
+      }
+    }
+    .row {
+      padding-bottom: 50px;
+      @include breakpoint('medium-up') {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-template-row: 1fr 1fr;
+        gap: 0 2%;
+        grid-template-areas: 
+        "title image"
+        "text image";
+        padding-bottom: 150px;
+
+        &.image-left {
+          grid-template-areas: 
+          "image title"
+          "image text";
+        }
+      }
+      &.exp {
+        grid-template-columns: repeat(2, 40%);
+        gap: 0 10%;
+      }
+    }
+    .image-box {
+      @include breakpoint('medium-up') {
+        grid-area: image;
+      }
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    .sub-title {
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      @include breakpoint('medium-up') {
+        grid-area: title;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: -40px;
+      }
+    }
+
+    .games {
+      .sub-title {
+        margin-top: 80px;
+        margin-bottom: -90px;
+      }
+    }
+
+    .wrapper {
+      margin-top: 30px;
+      @include breakpoint('medium-up') {
+        grid-area: text;
+      }
+      &.space-left {
+        @include breakpoint('medium-down') {
+          padding-left: 55px;
+        }
+      }
+    }
+
+    .link {
+      margin-top: 15px;
+      @include breakpoint('medium-up') {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &-proces {
+    padding: 60px 0;
+    @include breakpoint('large-up') {
+      padding: 90px 0;
+    }
+
+    .title {
+      margin-bottom: 75px;
+      @include breakpoint('large-up') {
+        text-align: center;
+        margin-bottom: 90px;
+      }
+    }
+
+    #steps {
+      @include breakpoint('large-up') {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 45% 45%;
+        gap: 0 10%;
+      }
+    }
+
+    .proces-box {
+      @include breakpoint('large-up') {
+        display: grid;
+        grid-template-rows: 55% 15% 20%;
+        grid-template-columns:1fr;
+      }
+      .image-box {
+        width: 280px;
+        margin: 0 auto 25px;
+        @include breakpoint('medium-up') {
+          width: 448px;
+        }
+      }
+      .name {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        @include breakpoint('large-up') {
+          margin-top: 30px;
+        }
+
+        .number {
+          margin-right: 15px;
+          font-size: 19px;
+          line-height: 24px;
+          font-weight: 700;
+          letter-spacing: 4px;
+          @include breakpoint('large-up') {
+            font-size: 24px;
+            line-height: 29px;
+          }
+        }
+
+        .step {
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 3px;
+          @include breakpoint('large-up') {
+            font-size: 24px;
+            line-height: 29px;
+          }
+        }
+      }
+      .text {
+        @include breakpoint('large-up') {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    @include slick-arrows;
+  }
+
+  &-quote {
+    padding: 70px 0;
+    background-color: $blue;
+    color: $white;
+    text-align: center;
+    @include breakpoint('medium-up') {
+      padding: 165px 0;
+    }
+    .quote {
+      font-size: 17px;
+      line-height: 21px;
+      margin-bottom: 30px;
+      @include breakpoint('medium-up') {
+        font-size: 36px;
+        line-height: 54px;
+        text-align: left;
+      }
+    }
+
+    .author {
+      font-size: 9px;
+      line-height: 10px;
+      letter-spacing: 3px;
+      @include breakpoint('medium-up') {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}

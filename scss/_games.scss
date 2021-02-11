@@ -1,0 +1,71 @@
+.games {
+  &-header {
+    .image-box {
+      @include breakpoint('large-up') {
+        width: 242px;
+      }
+    }
+  }
+  &-variety,
+  &-platforms {
+    .eyebrow,
+    .title,
+    .text {
+      max-width: 730px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &-variety {
+    @include breakpoint('large-up') {
+      display: flex;
+      flex-direction: column;
+    }
+    #games-carousel {
+      margin-bottom: 30px;
+      @include breakpoint('large-up') {
+        margin-top: 90px;
+        margin-bottom: 75px;
+        order: 3;
+      }
+      .image-box {
+        max-width: 65vw;
+        @include breakpoint('large-up') {
+          max-width: 658px;
+        }
+        &.slick-slide {
+          transform: scale(.88);
+          transition: transform .2s linear;
+          &.slick-current {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+    .space-left {
+      padding-left: 85px;
+      &.text-wrapper {
+        @include breakpoint('large-up') {
+          order: 2;
+        }
+      }
+      &.link-wrapper {
+        margin-top: 30px;
+        @include breakpoint('large-up') {
+          order: 4;
+        }
+      }
+      .text {
+        max-width: 730px;
+      }
+    }
+  }
+
+  &-platforms {
+    padding-top: 75px;
+    @include breakpoint('large-up') {
+      margin-top: 120px;
+    }
+  }
+}

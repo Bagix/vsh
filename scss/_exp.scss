@@ -1,0 +1,182 @@
+.exp {
+  &-header {
+    .image-box {
+      @include breakpoint('large-up') {
+        width: 296px;
+      }
+    }
+  }
+  &-service {
+    .row {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint('medium-up') {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 0 120px;
+
+      }
+      &:first-of-type {
+        padding: 75px 0;
+        @include breakpoint('medium-up') {
+          grid-template-columns: 40% 1fr;
+          grid-template-areas:
+          "image title"
+          "image text";
+          padding: 140px 0 90px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        @include breakpoint('medium-up') {
+          grid-template-columns: 1fr 40%;
+          grid-template-areas:
+          "title image"
+          "text image";
+        }
+        .text {
+          @include breakpoint('medium-down') {
+            margin-left: 55px;
+          }
+        }
+      }
+
+      .wrapper {
+        @include breakpoint('medium-up') {
+          grid-area: title;
+          margin-top: 50px;
+        }
+      }
+
+      .image-box {
+        @include breakpoint('medium-up') {
+          grid-area: image;
+        }
+        @include breakpoint('medium-down') {
+          margin-bottom: 30px;
+        }
+        img {
+          border-radius: 10px;
+        }
+      }
+
+      .text {
+        @include breakpoint('medium-up') {
+          grid-area: text;
+        }
+        @include breakpoint('medium-down') {
+          max-width: 256px;
+        }
+      }
+    }
+  }
+
+  &-choice {
+    .wrapper {
+      display: grid;
+      grid-template-rows: 50px repeat(2, 1fr) 4px repeat(2, 1fr) 4px repeat(2, 1fr) 4px;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
+      grid-template-areas:
+      "tall1 tall2"
+      "text1 text2"
+      "look look"
+      "sep1 sep1"
+      "look1 look2"
+      "graphic graphic"
+      "sep2 sep2"
+      "graphic1 graphic2"
+      "eq eq"
+      "sep3 sep3"
+      "eq1 eq2";
+
+      @include breakpoint('large-up') {
+        grid-template-rows: repeat(3, 1fr) 4px 1fr 4px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "tall1 image tall2"
+        "text1 image text2"
+        "look1 look look2"
+        "sep1 sep1 sep1"
+        "graphic1 graphic graphic2"
+        "sep2 sep2 sep2"
+        "eq1 eq eq2";
+        margin-top: 90px;
+      }
+    }
+
+    .sep {
+      height: 4px;
+      margin-top: -10px;
+      background-color: $lightblue;
+      &.mobile-only {
+        @include breakpoint('large-up') {
+          display: none;
+        }
+      }
+    }
+
+    .tall1 {grid-area: tall1;}
+    .tall2 {grid-area: tall2;}
+    .text1 {grid-area: text1;}
+    .text2 {grid-area: text2;}
+    .look {grid-area: look;}
+    .lokk1 {grid-area: lokk1;}
+    .look2 {grid-area: look2;}
+    .graphic {grid-area: graphic;}
+    .graphic1 {grid-area: graphic1;}
+    .graphic2 {grid-area: graphic2;}
+    .eq {grid-area: eq;}
+    .eq1 {grid-area: eq1;}
+    .eq2 {grid-area: eq2;}
+    .sep1 {grid-area: sep1;}
+    .sep2 {grid-area: sep2;}
+    .sep3 {grid-area: sep3;}
+    .image-box {
+      display: none;
+      @include breakpoint('large-up') {
+        display: block;
+        max-width: 230px;
+        grid-area: image;
+        margin: auto;
+      }
+    }
+
+    .look,
+    .graphic,
+    .eq {
+      margin-top: 52px;
+      @include breakpoint('large-up') {
+        text-align: center;
+      }
+      &1,
+      &2 {
+        margin-top: 5px;
+        @include breakpoint('large-up') {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .text {
+      &--tall {
+        letter-spacing: 5px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 300;
+        @include breakpoint('large-up') {
+          font-size: 50px;
+        }
+      }
+      &--bold {
+        font-weight: 700;
+      }
+    }
+  }
+  &-potential {
+    margin-top: 75px;
+    @include breakpoint('large-up') {
+      margin-top: 90px;
+    }
+  }
+}

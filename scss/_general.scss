@@ -1,0 +1,397 @@
+$montserrat: 'Montserrat', sans-serif;
+
+$blue: #23A0DF;
+$lightblue: #EBF3F7;
+$lightgrey: #C4C4C5;
+$grey: #55585F;
+$darkgreen: #092D36;
+$black: #272727;
+$white: #FFF;
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Bold'), url('./fonts/Gilroy-Bold.woff') format('woff');
+}
+
+%text {
+  width: 75%;
+  @include breakpoint('medium-up') {
+    width: 60%;
+  }
+}
+
+.single-text {
+  @extend %text;
+  @include breakpoint('x-large-up') {
+    width: 730px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $montserrat;
+  font-size: 14px;
+  color: $black;
+  line-height: 17px;
+  font-weight: 500;
+  @include breakpoint("large-up") {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+.header {
+  padding-bottom: 40px;
+  @include breakpoint('large-up') {
+    padding-bottom: 120px;
+  }
+
+  .head-1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    text-align: left;
+    font-family: "Gilroy-Bold";
+    font-weight: 700;
+    @include breakpoint('medium-up') {
+      font-size: 55px;
+      line-height: 67px;
+      text-align: center;
+      margin-bottom: 90px;
+    }
+    &--small-space {
+      margin-bottom: 45px;
+    }
+  }
+
+  .text {
+    width: 70vw;
+    font-weight: 600;
+    @include breakpoint('medium-up') {
+      max-width: 730px;
+      width: initial;
+      margin: auto;
+      line-height: 43px;
+      font-size: 24px;
+    }
+  }
+  .image-box {
+    width: 200px;
+    margin: 0 auto 45px;
+    @include breakpoint('large-up') {
+      position: absolute;
+      width: 300px;
+      top: -13%;
+      right: 3%;
+    }
+    @include breakpoint('xx-large-up') {
+      right: -7%;
+    }
+  }
+}
+
+
+.picture-bar {
+  padding-bottom: 60px;
+  @include breakpoint('large-up') {
+    padding-top: 100px;
+  }
+  .image-wrapper {
+    padding-top: 30px;
+    @include breakpoint('large-up') {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 90px;
+    }
+  }
+  .image-box {
+    text-align: center;
+    margin-bottom: 45px;
+    @include breakpoint('large-up') {
+      max-width: 540px;
+      margin-bottom: 60px;
+    }
+    &:nth-of-type(2) img {
+      @include breakpoint('large-up') {
+        margin-left: 25px;
+      }
+    }
+    img {
+      margin-top: 15px;
+      border-radius: 10px;
+      @include breakpoint('large-up') {
+        margin-top: 30px;
+      }
+    }
+  }
+  .text {
+    @include breakpoint('large-up') {
+      max-width: 730px;
+      margin: auto;
+    }
+  }
+}
+
+
+.points-list {
+  padding-bottom: 90px;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint('large-up') {
+        flex-direction: row;
+      }
+      .col {
+        &-left {
+          @include breakpoint('large-down') {
+            order: 2
+          }
+          @include breakpoint('large-up') {
+            width: 65%
+          }
+        }
+        &-right {
+          @include breakpoint('large-up') {
+            display: flex;
+          }
+          @include breakpoint('large-down') {
+            order: 1;
+          }
+          .image-box {
+            @include breakpoint('large-up') {
+              align-self: flex-end;
+              margin-bottom: 100px;
+            }
+          }
+        }
+      }
+    }
+    .features-list {
+      margin-top: 35px;
+      .title {
+        @include breakpoint('large-up') {
+          margin-bottom: 100px;
+        }
+      }
+      li {
+        position: relative;
+        @include breakpoint('large-up') {
+          margin-bottom: 40px;
+        }
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 60px;
+          color: $lightblue;
+          font-weight: bold;
+          line-height: 73px;
+          z-index: 5;
+          @include breakpoint('large-up') {
+            margin-top: -12px;
+            font-size: 144px;
+            line-height: 176px;
+          }
+        }
+        &:first-child {
+          &:after {
+            content: '01';
+          }
+        }
+        &:nth-child(2) {
+          &:after {
+            content: '02';
+          }
+        }
+        &:last-child {
+          &:after {
+            content: '03';
+          }
+        }
+        p {
+          position: relative;
+          padding: 25px 0 25px 35px;
+          z-index: 10;
+          @include breakpoint('large-up') {
+            padding: 60px 0 60px 80px;
+          }
+        }
+      }
+    }
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  @include breakpoint('large-up') {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.about-service {
+  padding-bottom: 75px;
+  @include breakpoint('large-up') {
+    padding-bottom: 120px;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin: 0 auto;
+  @include breakpoint("small-up") {
+    max-width: 540px;
+  }
+  @include breakpoint("medium-up") {
+    max-width: 720px;
+  }
+  @include breakpoint("large-up") {
+    max-width: 960px;
+  }
+  @include breakpoint("x-large-up") {
+    max-width: 1200px;
+  }
+  &--wide {
+    max-width: 1440px;
+    padding: 0;
+  }
+  &-max {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  @include breakpoint("large-up") {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  &--thin {
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  &--letter-space {
+    letter-spacing: 2px;
+  }
+}
+
+.sub-title {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.btn-box {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.slogan {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  @include breakpoint('medium-up') {
+    text-align: center;
+  }
+  @include breakpoint("large-up") {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.text-square {
+  padding: 15px 24px;
+  background-color: $white;
+  @include breakpoint('large-up') {
+    padding: 48px 24px;
+  }
+}
+
+.btn,
+.link {
+  .arrow {
+    width: 16px;
+    height: auto;
+    margin-left: 14px;
+    @include breakpoint('large-up') {
+      width: 22px;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 25px;
+  background-color: $blue;
+  line-height: 17px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: $white;
+  text-decoration: none;
+  &--reverse {
+    color: $blue;
+    background-color: $white;
+  }
+  @include breakpoint("large-up") {
+    font-size: 20px;
+    padding: 13px 24px;
+  }
+  .arrow {
+    vertical-align: middle;
+  }
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  color: $black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  @include breakpoint("large-up") {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    background-color: $blue;
+  }
+  .arrow {
+    margin-left: 8px;
+  }
+}
+
