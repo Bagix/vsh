@@ -82,6 +82,16 @@ jQuery("document").ready(function() {
     jQuery("#vr-box").removeClass("show");
   }
 
+  jQuery('.wpcf7-list-item > label > input').prop('checked', false);
+
+  jQuery('.wpcf7-list-item > label > input').on('change', function() {
+    jQuery('.wpcf7-list-item > label ').removeClass("selected");
+    if (this.checked) {
+      var label = this.closest('label')
+      jQuery(label).addClass("selected")
+    }
+  })
+
 })
 
 function readCookie(name) {

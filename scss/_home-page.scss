@@ -703,3 +703,8 @@
     }
   }
 }
+#hp-footer {
+  @include breakpoint('large-down') {
+    display: none;
+  }
+}

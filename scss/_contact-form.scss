@@ -1,0 +1,124 @@
+.contact {
+  &-form {
+    padding-top: 90px;
+    padding-bottom: 45px;
+
+    .title {
+      margin-bottom: 45px;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input {
+      font-family: $montserrat;
+      font-size: 14px;
+      line-height: 17px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input:not([type=submit]) {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      margin: 25px 0 45px;
+      border-bottom: 2px solid $black;
+    }
+
+    .wpcf7-radio {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 0;
+      .wpcf7-list-item {
+        margin: 15px 0 0;
+        input {
+          display: none;
+        }
+        label {
+          display: block;
+          width: 145px;
+          height: 145px;
+          padding-top: 15px;
+          border: 2px solid $black;
+          text-align: center;
+          border-radius: 10px;
+          background-color: $white;
+          background-position: center 45px;
+          background-repeat: no-repeat;
+          transition: all .2s linear;
+
+          &.selected {
+            background-color: $blue;
+            color: $white;
+          }
+        }
+        &.first {
+          label {
+            background-image: url('./images/contact/vr.png');
+          }
+        }
+        &:nth-child(2) {
+          label {
+            background-image: url('./images/contact/ar.png');
+          }
+        }
+        &:nth-child(3) {
+          label {
+            background-image: url('./images/contact/other.png');
+          }
+        }
+        &.last {
+          label {
+            background-image: url('./images/contact/question.png');
+          }
+        }
+      }
+    }
+
+    .submit {
+      margin-top: 50px;
+      text-align: center;
+
+      input[type=submit] {
+        padding: 7px 25px;
+        border: none;
+        background-color: $blue;
+        color: $white;
+        border-radius: 50px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-other {
+    padding-bottom: 60px;
+
+    .divider {
+      border: 1px solid $black;
+      margin-bottom: 30px;
+    }
+
+    .slogan {
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      margin-bottom: 30px;
+      img {
+        width: 29px;
+        margin-right: 32px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

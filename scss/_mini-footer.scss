@@ -1,24 +1,11 @@
-#hp-footer {
-  @include breakpoint('large-down') {
-    display: none;
-  }
-  margin: 75px 0;
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.mini-footer {
+  @include breakpoint('large-up') {
+    margin: 75px auto;
   }
   p,
   a {
     letter-spacing: 1.5px;
     margin-bottom: 30px;
-  }
-  p {
-    font-size: 20px;
-  }
-  a {
-    font-size: 20px;
-    font-weight: 500;
   }
   .col-right {
     .wrapper {
@@ -31,6 +18,47 @@
       }
       .col-2 {
         margin-left: 85px;
+      }
+    }
+  }
+
+  
+  .is-pc {
+    display: none;
+    @include breakpoint('large-up') {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    p {
+      font-size: 20px;
+    }
+    a {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .is-mobile {
+    padding: 0 32px 45px;
+    @include breakpoint('large-up') {
+      display: none;
+    }
+
+    .sub-title {
+      font-weight: 700;
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 15px;
+      p,
+      a {
+        font-size: 14px;
       }
     }
   }

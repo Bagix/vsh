@@ -12,7 +12,9 @@
       .wrapper {
         .col-right {
           .image-box {
-            margin-bottom: 65px;
+            @include breakpoint('large-up') {
+              margin-bottom: 65px;
+            }
           }
         }
       }
@@ -62,7 +64,20 @@
       &-2 {
         .image-box,
         .text {
-          margin-left: 20%;
+          @include breakpoint('large-up') {
+            margin-left: 20%;
+          }
+        }
+        .image-box {
+          @include breakpoint('large-down') {
+            max-width: 300px;
+            margin: auto;
+          }
+        }
+        .text {
+          @include breakpoint('large-down') {
+            text-align: center;
+          }
         }
       }
     }
@@ -87,6 +102,149 @@
       }
       &-2 {
         margin-top: 30px;
+      }
+    }
+  }
+  &-possibilities {
+    padding-bottom: 75px;
+    @include breakpoint('large-up') {
+      padding-bottom: 120px;
+    }
+    .slider-wrapper {
+      position: relative;
+      background-image: url('./images/ar/bg.png');
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      margin: 75px 0;
+      @include breakpoint('large-up') {
+        background-size: cover;
+        margin: 120px 0;
+        padding: 30px 0; 
+      }
+
+      .frame {
+        display: none;
+        @include breakpoint('large-up') {
+          position: absolute;
+          display: block;
+          width: 350px;
+          bottom: 20px;
+          left: 50%;
+          margin-left: -175px;
+          z-index: 15;
+        }
+      }
+
+      .box {
+        &-1 {
+          width: 250px;
+        }
+        &-2 {
+          width: 200px;
+        }
+        &-3 {
+          width: 300px;
+        }
+        &-4 {
+          width: 350px;
+        }
+        @include breakpoint('medium-up') {
+          &-1 {
+            width: 300px;
+          }
+          &-2 {
+            width: 320px;
+          }
+          &-3 {
+            width: 400px;
+          }
+          &-4 {
+            width: 550px;
+          }
+        }
+        @include breakpoint('large-up') {
+          &-1,
+          &-2,
+          &-3,
+          &-4 {
+            width: auto;
+          }
+        }
+      }
+
+      #ar-slider {
+        z-index: 10;
+      }
+      @include slick-arrows;
+
+      .slick-track {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .slick {
+        &-prev {
+          background-image: url('./images/ar/arrow-left.png');
+        }
+    
+        &-next {
+          background-image: url('./images/ar/arrow-right.png');
+        }
+      }
+    }
+    .container {
+      &:nth-last-child(2) {
+        margin-bottom: 45px;
+        @include breakpoint('large-up') {
+          margin-bottom: 75px;
+          text-align: center;
+        }
+      }
+    }
+
+    .link {
+      margin: 30px auto 0;
+      @include breakpoint('large-up') {
+        margin-top: 60px;
+      }
+    }
+
+    .options {
+      @include slick-arrows;
+
+      .option-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &.swap {
+          flex-direction: row-reverse;
+        }
+      }
+      .image-box {
+        max-width: 446px;
+        margin: auto;
+        @include breakpoint('large-up') {
+          margin: 0;
+        }
+      }
+      .wrapper {
+        margin-top: 35px;
+        margin-left: 55px;
+        @include breakpoint('medium-up') {
+          margin-left: 23%;
+        }
+        @include breakpoint('large-up') {
+          margin-left: 0;
+        }
+
+        .sub-title {
+          text-align: left;
+        }
+        .text {
+          margin-top: 15px;
+          margin-bottom: 30px;
+          max-width: 300px;
+        }
       }
     }
   }

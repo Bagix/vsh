@@ -41,15 +41,48 @@
     <h2 class="title">Możliwości</h2>
     <p class="text">Prezentacja, symulacja działania usługi, zabawa i kooperacja w różnych miejscach. To kilka przetestowanych zastosowań technologii AR. Jakie jeszcze możemy odkryć przestrzenie?</p>
   </div>
-  <div id="ar-slider">
-    
+  <div class="slider-wrapper">
+    <img class="frame" src="<?php echo get_template_directory_uri().'/images/ar/telefon.png' ?>">
+    <div id="ar-slider">
+      <div class="image-box box-1">
+        <img src="<?php echo get_template_directory_uri().'/images/ar/flexUltimate.png' ?>">
+      </div>
+      <div class="image-box box-2">
+        <img src="<?php echo get_template_directory_uri().'/images/ar/s80.png' ?>">
+      </div>
+      <div class="image-box box-3">
+        <img src="<?php echo get_template_directory_uri().'/images/ar/ixeo.png' ?>">
+      </div>
+      <div class="image-box box-4">
+        <img src="<?php echo get_template_directory_uri().'/images/ar/kanapa.png' ?>">
+      </div>
+    </div>
   </div>
   <div class="container">
     <p class="text">Dowiedz się jak korzystać z urządzeń, zanim będziesz mieć z nimi fizyczny kontakt lub poznaj je poprzez wizualizacje. Odkryj na co dzień niewidoczne szczegóły. Sprawdź co się kryje wewnątrz.</p>
     <a href="" class="link">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
   </div>
-  <div class="container">
-
+  <div class="container options">
+    <div id="options-slider">
+      <div class="option-box">
+        <div class="image-box">
+          <img src="<?php echo get_template_directory_uri().'/images/ar/instrukcje.png' ?>" alt="instrukcje">
+        </div>
+        <div class="wrapper">
+          <p class="sub-title">Instrukcje</p>
+          <p class="text">Pokazanie, tłumaczy lepiej niż instrukcja na kartce. Dodaj urządzenie do realnego świata i zaprezentuj działanie animacjami.</p>
+        </div>
+      </div>
+      <div class="option-box swap">
+        <div class="image-box">
+          <img src="<?php echo get_template_directory_uri().'/images/ar/przeswietl.png' ?>" alt="prześwietl">
+        </div>
+        <div class="wrapper">
+          <p class="sub-title">Prześwietl</p>
+          <p class="text">Zobacz jak przedmiot wygląda od środka.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -83,23 +116,29 @@
   ?>
 </footer>
 <script>
-  // jQuery('#objects-carousel').slick({
-  //   responsive: [
-  //     {
-  //       breakpoint: 8000,
-  //       settings: "unslick"
-  //     },
-  //     {
-  //       breakpoint: 992,
-  //       settings: {
-  //         infinite: false,
-  //         initialSlide: 1,
-  //         appendArrows: jQuery('.models-objects'),
-  //         adaptiveHeight: true
-  //       }
-  //     }
-  //   ]
-  // });
+  jQuery('#ar-slider').slick({
+    infinite: false,
+    initialSlide: 2,
+    appendArrows: jQuery('.slider-wrapper'),
+    variableWidth: true,
+    centerMode: true,
+  });
+
+  jQuery('#options-slider').slick({
+    responsive: [
+      {
+        breakpoint: 8000,
+        settings: "unslick"
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          infinite: false,
+          appendArrows: jQuery('.options'),
+        }
+      }
+    ]
+  });
 </script>
 <?php
 get_footer();

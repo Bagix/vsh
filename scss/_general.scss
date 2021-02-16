@@ -22,6 +22,8 @@ $white: #FFF;
   }
 }
 
+div:focus {outline: none;}
+
 .single-text {
   @extend %text;
   @include breakpoint('x-large-up') {
