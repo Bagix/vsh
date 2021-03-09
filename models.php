@@ -3,13 +3,11 @@
 <?php get_header(); ?>
 
 <header class="header models-header container">
-  <h1 class="head-1">Gry</h1>
+  <h1 class="head-1">Modelowanie 3D</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/models/models.png' ?>" alt="">
   </div>
-  <p class="text">
-    Otaczają nas trójwymiarowe przedmioty i przestrzenie oraz... płaskie ekrany. Wyjdź poza zdjęcia i pokaż swoje produkty w przestrzennej formie na stronie internetowej lub w AR. Pozwól odbiorcom poznać obiekty z każdej strony, a nawet obejrzyj we własnej przestrzeni. 
-  </p>
+  <p class="text">Otaczają nas trójwymiarowe przedmioty i przestrzenie oraz... płaskie ekrany. Wyjdź poza zdjęcia i pokaż swoje produkty w przestrzennej formie na stronie internetowej lub w AR. Pozwól odbiorcom poznać obiekty z każdej strony, a nawet obejrzyj we własnej przestrzeni. </p>
 </header>
 
 <section class="models-service container about-service">

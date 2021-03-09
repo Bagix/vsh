@@ -1,27 +1,40 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since 1.0.0
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+<div class="wrapper-404">
+  <div class="col col-left">
+      <div class="name">
+          <img src="<?php echo get_template_directory_uri().'/images/404/name.png'?>">
+      </div>
+  </div>
 
-	<header class="page-header alignwide">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing here', 'twentytwentyone' ); ?></h1>
-	</header><!-- .page-header -->
+  <div class="col col-right content">
+      <div class="logo">
+          <img src="<?php echo get_template_directory_uri().'/images/404/logo2.png'?>" alt="Virtual Software House">
+      </div>
+      <div class="wrapper2">
+          <div class="questions">
+              <img src="<?php echo get_template_directory_uri().'/images/404/question-marks.png'?>">
+          </div>
+          <div class="text">
+              <p>Chyba nie te drzwi...<br>Podana strona nie istnieje</p>
+          </div>
+      </div>
+      <div class="bottom">
+          <div class="note">
+              <p>
+                  <a href="mailto:hello@vhsoft.pl">hello@vhsoft.pl</a><br>
+                  <a href="tel:+48660734273">+48 660 734 273</a><br>
+                  ul.Piotrkowska 120<br>
+                  90-006 Łódź
+              </p>
+          </div>
+          <div class="fb">
+              <a href="https://www.facebook.com/vhsoftlodz" target="_blank">
+                  <img src="<?php echo get_template_directory_uri().'/images/404/fb.png'?>">
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
 
-	<div class="error-404 not-found default-max-width">
-		<div class="page-content">
-			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentytwentyone' ); ?></p>
-			<?php get_search_form(); ?>
-		</div><!-- .page-content -->
-	</div><!-- .error-404 -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

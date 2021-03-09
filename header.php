@@ -30,9 +30,10 @@
     'menu' => 'header-menu',
     'container' => 'nav',
     'container_id' => 'nav',
-    'container_class' => 'container container--wide',
+    'container_class' => '',
     'menu_class' => 'menu',
     'items_wrap' => '
+<div class="holder">
             <div class="wrapper">
               <div class="image-box logo">
                 <a href="'.$home_url.'">
@@ -47,6 +48,7 @@
               </div>
             </div>
             <ul id="%1$s" class="%2$s">%3$s</ul>
+</div>
     ',
     'theme_location' => 'header-menu'
     )

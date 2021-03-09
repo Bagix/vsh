@@ -173,6 +173,11 @@
       }
     }
   }
+
+  &-360 {
+    margin-top: 30px;
+  }
+
   &-potential {
     margin-top: 75px;
     @include breakpoint('large-up') {

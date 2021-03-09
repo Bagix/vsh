@@ -2,6 +2,28 @@
 
 jQuery("document").ready(function() {
 
+  window.addEventListener("scroll", bringmenu);
+  var currentPos = 0;
+  function bringmenu() {
+    var top = jQuery(window).scrollTop();
+
+    if(currentPos < top) {
+      jQuery('.mobile-nav-bar').addClass('out');
+    } else {
+      jQuery('.mobile-nav-bar').removeClass('out');
+    }
+
+    if(window.matchMedia("(min-width: 992px)").matches) {
+      if(currentPos < top) {
+        jQuery('#nav').addClass('out');
+      } else {
+        jQuery('#nav').removeClass('out');
+      }
+    }
+
+    currentPos = top;
+}
+
   if(readCookie("VR-mode")) {
     if (readCookie("VR-mode") === "1") {
       showVR();
@@ -14,10 +36,8 @@ jQuery("document").ready(function() {
   }
 
   // Check which language is selected ans hide it in nav.
-  var lang_options = jQuery("#nav > ul > li.lang-switcher a");
-  // if(window.location.href.indexOf("/en/") > 0) {
-  //     jQuery("body").attr("data-lang", "eng");
-  // }
+  var lang_options = jQuery("#nav > .holder > ul > li.lang-switcher a");
+
   for(let i=0; i<lang_options.length; i++) {
       if(window.location.href.indexOf("/en/") > 0 && lang_options[i].href.indexOf("/en/") > 0) {
           jQuery(lang_options[i]).parent().hide();

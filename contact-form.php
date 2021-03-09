@@ -25,6 +25,7 @@
         hello@vhsoft.pl
       </a>
     </div>
+    <div class="divider"></div>
 </section>
 
 <footer>

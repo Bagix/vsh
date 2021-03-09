@@ -1,9 +1,9 @@
-<?php /* Template Name: Experience */?>
+<?php /* Template Name: Training */?>
 
 <?php get_header(); ?>
 
 <header class="header training-header container">
-  <h1 class="head-1">Doświadczenia VR</h1>
+  <h1 class="head-1">Szkolenia VR</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/training/vr-training-top.png' ?>" alt="">
   </div>

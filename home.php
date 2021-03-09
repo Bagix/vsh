@@ -23,10 +23,10 @@
 
 <section id="discover">
   <div class="container">
-    <h2 class="title">Odkryj nieznaną rzeczywistośc</h2>
+    <h2 class="title">Odkryj nieznaną rzeczywistość</h2>
     <p class="sub-title">Tworzymy aplikacje VR i AR. Dla Ciebie.</p>
     <div class="btn-box">
-      <a href="" class="btn">Napisz do nas <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right.png' ?>" alt=""></a>
+      <a href="<?php echo get_permalink( get_page_by_title( 'kontakt' ) )?>" class="btn">Napisz do nas <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right.png' ?>" alt=""></a>
     </div>
     <p class="description">Zmieniamy otoczenie poprzez dodawanie do rzeczywistości.  Tworzymy nowe światy, wcielamy w życie niemożliwe.<br><br>
 Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie widzisz. </p>
@@ -54,7 +54,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         Aplikacje wirtualnej rzeczywistości mogą przyjmować różnorodne formy. 
         Zobacz jakie projekty zrealizowaliśmy!
       </p>
-      <a href="#" class="link">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="#" class="link regular-case">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
     </div>
     <div class="container training">
         <h3 class="slogan">Pomagamy szkolić pracowników zdalnie, bezpiecznie i efektywnie</h3>
@@ -82,7 +82,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
     <div class="container gym-slogan">
       <h3 class="slogan">Zmieniamy fitness poprzez technologie i gry</h3>
     </div>
-    <div class="container-max gym">
+    <div class="container container--wide gym">
       <div>
       <div class="image-box">
         <img src="<?php echo get_template_directory_uri().'/images/gym-image.png' ?>" alt="vr-gym">
@@ -264,7 +264,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           <p>90-006 Łódź</p>
         </div>
       </div>
-      <a href="" class="link">Darmowa wycena <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="" class="link regular-case">Darmowa wycena <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
       <div class="social-media">
         <a href="" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/instagram.png' ?>" alt="instagram"></a>
         <a href="" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/linkedin.png' ?>" alt="linkedin"></a>

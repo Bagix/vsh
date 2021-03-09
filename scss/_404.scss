@@ -1,0 +1,115 @@
+.wrapper-404 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: auto;
+
+
+  .name {
+    max-width: 251px;
+  }
+
+  .col {
+    position: relative;
+    min-height: calc(100vh - 50px);
+    height: 100%;
+    @include breakpoint('large-up') {
+      min-height: calc(100vh - 108px);
+    }
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $lightblue;
+      @include breakpoint('medium-up') {
+        justify-content: flex-end;
+      }
+    }
+    &-right {
+      background-color: $blue;
+
+      .logo {
+        width: 180px;
+        margin-left: -67px;
+        @include breakpoint('large-up') {
+          position: absolute;
+          width: 300px;
+          margin-left: -112px;
+          margin-top: 15%;
+          z-index: 10;
+        }
+      }
+    }
+  }
+
+  .wrapper2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    z-index: 20;
+
+    @include breakpoint('large-up') {
+      margin-left: 15%;
+      margin-top: 50px;
+    }
+
+    @include breakpoint('x-large-up') {
+      margin-top: 200px;
+    }
+
+
+    .text {
+      color: $white;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: bold;
+      @include breakpoint('medium-up') {
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+
+    .questions {
+      width: 120px;
+      margin: 0 auto 30px;
+      @include breakpoint('medium-up') {
+        width: 195px;
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    bottom: 50px;
+
+    @include breakpoint('medium-up') {
+      right: 50px;
+      bottom: 10px;
+    }
+    .note {
+      color: #fff;
+      font-size: 12px;
+      line-height: 15px;
+      @include breakpoint('medium-up') {
+        font-size: 22px;
+        line-height: 48px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .fb {
+      margin-left: 25px;
+      margin-top: 40px;
+      img {
+        @media(max-width: 1199px) {
+          width: 35px;
+        }
+      }
+    }
+  }
+}

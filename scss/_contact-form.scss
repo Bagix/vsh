@@ -3,8 +3,24 @@
     padding-top: 90px;
     padding-bottom: 45px;
 
+    @include breakpoint('large-up') {
+      padding-bottom: 180px;
+    }
+
+    .wpcf7-form {
+      @include breakpoint('large-up') {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 200px;
+      }
+    }
+
     .title {
       margin-bottom: 45px;
+      @include breakpoint('large-up') {
+        margin-bottom: 60px;
+      }
     }
 
     label {
@@ -18,14 +34,26 @@
       &:focus {
         outline: none;
       }
+
+      @include breakpoint('medium-up') {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
 
     input:not([type=submit]) {
+      width: 100%;
       border-top: none;
       border-right: none;
       border-left: none;
       margin: 25px 0 45px;
       border-bottom: 2px solid $black;
+    }
+
+    .app-type {
+      @include breakpoint('large-up') {
+        margin-bottom: 30px;
+      }
     }
 
     .wpcf7-radio {
@@ -50,14 +78,34 @@
           background-position: center 45px;
           background-repeat: no-repeat;
           transition: all .2s linear;
+          cursor: pointer;
+
+          @include breakpoint('medium-up') {
+            width: 160px;
+            height: 160px;
+            font-size: 20px;
+            line-height: 24px;
+            background-position-y: 60px;
+          }
 
           &.selected {
             background-color: $blue;
             color: $white;
           }
         }
+
+        &:nth-child(2),
+        &.last {
+          label {
+            @include breakpoint('large-up') {
+              margin-left: -40px;
+            }
+          }
+        }
+
         &.first {
           label {
+            
             background-image: url('./images/contact/vr.png');
           }
         }
@@ -90,27 +138,52 @@
         color: $white;
         border-radius: 50px;
         font-weight: 600;
+        cursor: pointer;
+        @include breakpoint('medium-up') {
+          padding: 14px 54px;
+          font-size: 22px;
+          line-height: 26px;
+        }
       }
     }
   }
 
   &-other {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 
     .divider {
       border: 1px solid $black;
       margin-bottom: 30px;
+
+      &:first-child {
+        @include breakpoint('medium-up') {
+          margin-bottom: 60px;
+        }
+      }
+
+      &:last-child {
+        margin-top: 30px;
+      }
     }
 
     .slogan {
       margin-bottom: 30px;
       text-align: center;
       font-weight: 500;
+
+      @include breakpoint('medium-up') {
+        margin-bottom: 60px;
+      }
     }
 
     .wrapper {
       display: flex;
       flex-direction: column;
+
+      @include breakpoint('medium-up') {
+        flex-direction: row;
+        justify-content: space-around;
+      }
     }
     a {
       margin-bottom: 30px;
