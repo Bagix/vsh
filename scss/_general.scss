@@ -64,7 +64,8 @@ a {
 }
 
 header,
-.contact-form {
+.contact-form,
+.wrapper-404 {
   margin-top: 49px;
   @include breakpoint('large-up') {
     margin-top: 108px;

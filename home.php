@@ -54,7 +54,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         Aplikacje wirtualnej rzeczywistości mogą przyjmować różnorodne formy. 
         Zobacz jakie projekty zrealizowaliśmy!
       </p>
-      <a href="#" class="link regular-case">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link regular-case">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
     </div>
     <div class="container training">
         <h3 class="slogan">Pomagamy szkolić pracowników zdalnie, bezpiecznie i efektywnie</h3>
@@ -74,7 +74,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           <div class="text-square">
             W kosmicznej bazie każdy trener jest w stanie kompleksowo przeszkolić swoich podopiecznych
           </div>
-          <a href="" class="link">Kosmiczna szkoła Groupe SEB <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+          <a href="" class="link regular-case hp-link">kosmiczna szkoła groupe seb <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         <div class="text-square">
           7 gier i aplikacji fitnessowych dla studia EMS&VR. Trening w połączeniu z technologią staje się ciekawszy i pozwala osiągać więcej.
         </div>
-        <a href="" class="link">Virtual Gym <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+        <a href="" class="link regular-case hp-link">virtual gym <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
       </div>
       </div>
     </div>
@@ -117,7 +117,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           <div class="text-square">
             Poznaj 100 lat polskiego komiksu i niepodległości Polski. Wskocz do rysowanych światów znanych np. z Tytusa, Romka i A’Tomka w pierwszej tego typu aplikacji w Europie.
           </div>
-          <a href="" class="link">Niepodległa.kom <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+          <a href="https://niepodlegla.gov.pl/aktualnosci/niepodlegla-kom-100-lat-polskiego-komiksu/" class="link regular-case hp-link">niepodległa.kom <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
         </div>
       </div>
     </div>
@@ -144,9 +144,9 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         <h3 class="slogan">Prezentuj i ucz obsługi realnych urządzeń</h3>
         <div class="image-box">
           <img src="<?php echo get_template_directory_uri().'/images/telefon.png' ?>" alt="odkurzacz">
-          <div class="holder">
+          <div class="holder-hp">
             <div class="text-square">Sprawdź jak pasują do Twojej przestrzeni urządzenia Groupe SEB: Tefal i KRUPS, poznaj ich atuty oraz dowiedz się jak ich używać.</div>
-            <a href="" class="link">HomeARound <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+            <a href="" class="link regular-case hp-link">homearound <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           Odkryj swój idealny produkt. Umieść we własnym pomieszczeniu, przesuń 
           i przymocuj do ściany.
         </div>
-        <a href="" class="link">Inteligentna klimatyzacja <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+        <a href="" class="link regular-case hp-link">inteligentna klimatyzacja <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
       </div>
     </div>
 
@@ -180,7 +180,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           <div class="text-square">
             Zaangażuj odbiorców w zabawę i pośrednie informowanie o swojej marce. Stwórzmy filtr i pozmieniajmy twarze na Instagramie.
           </div>
-          <a href="" class="link">Nakładka na Instagram <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a></div>
+          <a href="" class="link regular-case hp-link">nakładka na instagram <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a></div>
       </div>
     </div>
 
