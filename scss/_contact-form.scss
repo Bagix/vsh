@@ -41,7 +41,10 @@
       }
     }
 
-    input:not([type=submit]) {
+    input[type=text],
+    input[type=radio],
+    input[type=email],
+    input[type=tel] {
       width: 100%;
       border-top: none;
       border-right: none;
@@ -130,6 +133,18 @@
     .submit {
       margin-top: 50px;
       text-align: center;
+
+      span[class*="acceptance-"] {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+
+      .acpt {
+        + span {
+          font-size: 14px;
+        }
+      }
 
       input[type=submit] {
         padding: 7px 25px;
