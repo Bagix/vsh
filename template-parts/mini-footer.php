@@ -11,7 +11,7 @@
       <p>90-418 Łódź</p>
     </div>
     <div class="col-right">
-      <p>Mapa strony</p>
+      <p>mapa strony</p>
       <div class="wrapper">
         <div class="col-1">
           <a href="">Strona główna</a>

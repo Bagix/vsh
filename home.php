@@ -60,12 +60,12 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         <h3 class="slogan">Pomagamy szkolić pracowników zdalnie, bezpiecznie i efektywnie</h3>
     </div>
     <div class="container-max box360">
-      <iframe class="photo360"src="https://momento360.com/e/u/1d4d59e3bdd9493c8ea1dcfe66b7bb5c?utm_campaign=embed&utm_source=other&heading=311.48&pitch=3.09&field-of-view=75&size=medium"> </iframe>
+      <iframe class="photo360"src="https://momento360.com/e/u/1d4d59e3bdd9493c8ea1dcfe66b7bb5c?utm_campaign=embed&utm_source=other&heading=311.48&pitch=3.09&field-of-view=75&size=medium&wheel=false"> </iframe>
     </div>
 
     <div class="container two-cols">
       <div class="col-left">
-        <div class="image-box">
+        <div class="image-box space-base">
           <img src="<?php echo get_template_directory_uri().'/images/space-base.png' ?>" alt="space base">
         </div>
       </div>
@@ -101,7 +101,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
     </div>
 
     <div class="container video">
-      <video controls poster="<?php echo get_template_directory_uri().'/images/antresolka.png' ?>">
+      <video controls autoplay muted>
         <source src="<?php echo get_template_directory_uri().'/videos/antresolka_001.mp4' ?>" type="video/mp4">
       </video>
     </div>
@@ -130,7 +130,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         Aplikacje rozszerzające rzeczywistość mogą przyjmować 
         różnorodne formy. Zobacz jakie projekty zrealizowaliśmy!
       </p>
-      <a href="#" class="link">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
     </div>
     <div class="container-max equipment">
       <picture>
@@ -167,7 +167,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
 
     <div class="container-max filters">
       <div class="container">
-        <h3 class="slogan">Nietypowe reklama?</h3>
+        <h3 class="slogan">Nietypowa reklama?</h3>
         <div class="video-box">
           <div class="image-box">
             <img src="<?php echo get_template_directory_uri().'/images/phone.png' ?>" alt="">
@@ -243,7 +243,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
 
   <div class="container separators">
     <div class="image-box">
-      <img src="<?php echo get_template_directory_uri().'/images/separators.jpg' ?>">
+      <img src="<?php echo get_template_directory_uri().'/images/paski.png' ?>">
     </div>
   </div>
 

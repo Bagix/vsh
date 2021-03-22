@@ -7,14 +7,14 @@ jQuery("document").ready(function() {
   function bringmenu() {
     var top = jQuery(window).scrollTop();
 
-    if(currentPos < top) {
+    if(currentPos < top && currentPos > 0) {
       jQuery('.mobile-nav-bar').addClass('out');
     } else {
       jQuery('.mobile-nav-bar').removeClass('out');
     }
 
     if(window.matchMedia("(min-width: 992px)").matches) {
-      if(currentPos < top) {
+      if(currentPos < top && currentPos > 0) {
         jQuery('#nav').addClass('out');
       } else {
         jQuery('#nav').removeClass('out');
@@ -31,8 +31,13 @@ jQuery("document").ready(function() {
       showAR();
     }
   } else {
-    document.cookie = "VR-mode=1";
-    showVR();
+    if(window.matchMedia("(min-width: 992px)").matches) {
+      document.cookie = "VR-mode=1";
+      showVR();
+    } else {
+      document.cookie = "VR-mode=0";
+      showAR();
+    }
   }
 
   // Check which language is selected ans hide it in nav.

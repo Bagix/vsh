@@ -8,7 +8,14 @@
     letter-spacing: 1.5px;
     margin-bottom: 30px;
   }
+
+  a {
+    font-weight: 500;
+  }
   .col-right {
+    p:first-child {
+      font-variant: small-caps;
+    }
     .wrapper {
       display: flex;
       flex-direction: row;

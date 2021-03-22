@@ -63,13 +63,13 @@ body, html {
   @include breakpoint('large-up') {
     position: fixed;
     display: flex;
-    height: 108px;
+    height: 90px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: initial;
     overflow-y: visible;
-    padding: 30px 25px 30px 85px;
+    padding: 30px 100px;
     transform: translateX(0);
   }
   &.open {
@@ -152,6 +152,7 @@ body, html {
           border: 2px solid $blue;
           border-radius: 100px;
           transition: all .3s linear;
+          padding: 5px 29px;
           &:hover {
             background-color: $blue;
             color: $white;
