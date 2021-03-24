@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header games-header container">
+<header class="header header--with-img games-header container">
   <h1 class="head-1">Gry</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/games/games.png' ?>" alt="">
@@ -46,15 +46,15 @@
   <div class="image-wrapper">
     <div class="image-box">
       <p>Mobile</p>
-      <img src="<?php echo get_template_directory_uri().'/images/games/cartoons.jpg' ?>" alt="kreskówki">
+      <img src="<?php echo get_template_directory_uri().'/images/games/medicine.jpg' ?>" alt="kreskówki">
     </div>
     <div class="image-box">
       <p>Quest VR</p>
-      <img src="<?php echo get_template_directory_uri().'/images/games/lasers.jpg' ?>" alt="lasery">
+      <img src="<?php echo get_template_directory_uri().'/images/games/cartoons.jpg' ?>" alt="lasery">
     </div>
     <div class="image-box">
       <p>PC VR</p>
-      <img src="<?php echo get_template_directory_uri().'/images/games/medicine.jpg' ?>" alt="medycyna">
+      <img src="<?php echo get_template_directory_uri().'/images/games/lasers.jpg' ?>" alt="medycyna">
     </div>
   </div>
 </section>
@@ -67,7 +67,7 @@
     <div class="col-left">
       <ul class="features-list">
         <li><p>Nieustannie powiększa się rynek</p></li>
-        <li><p>Grywalizacja wzmacnia zaangażowanie pracowników i klientówą</p></li>
+        <li><p>Grywalizacja wzmacnia zaangażowanie pracowników i klientów</p></li>
         <li><p>Społeczność graczy nieustannie się powiększa</p></li>
       </ul>
     </div>

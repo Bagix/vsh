@@ -20,8 +20,11 @@
     @include breakpoint('large-up') {
       position: absolute;
       right: 5%;
-      width: 381px;
+      width: 280px;
       top: 66px;
+    }
+    @include breakpoint('xx-large-up') {
+      width: 380px;
     }
   }
 

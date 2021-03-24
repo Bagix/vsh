@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header service-header container">
+<header class="header header--with-img service-header container">
   <h1 class="head-1">Usługi</h1>
   <p class="text">Wprowadzamy nowe technologie do wielu dziedzin. Tworzymy zaawansowane aplikacje na różne urządzenia. Od mieszczących się w kieszeni telefonów do rozbudowanych stacji z goglami VR. Sprawdź co możemy razem stworzyć.</p>
   <div class="wrapper">

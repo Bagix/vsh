@@ -44,7 +44,7 @@
     <p class="text--tall tall1">Mobilne</p>
     <p class="text--tall tall2">Stacjonarne</p>
     <div class="image-box">
-      <img src="<?php echo get_template_directory_uri().'/images/exp/choice.png' ?>" alt="wybor">
+      <img src="<?php echo get_template_directory_uri().'/images/exp/choice.svg' ?>" alt="wybor">
     </div>
     <p class="text text1">Brak kabli i dodatkowych urządzeń. Moc VR zamknięta w przenośnych goglach.</p>
     <p class="text text2">Niesamowita wydajność i świetna jakość grafiki dzięki połączeniu z komputerem</p>

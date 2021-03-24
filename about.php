@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header about-us-header container">
+<header class="header header--with-img about-us-header container">
   <h1 class="head-1 head-1--small-space">O nas</h1>
   <p class="text">
     Virtual Software House to pełne pasjonatów studio developerskie. Naszą główną działalnością jest tworzenie aplikacji i gier na platformy VR oraz AR. Projektujemy personalizowane rozwiązania dla klientów.
@@ -22,7 +22,7 @@
 
 <section class="about-us-values container">
   <h2 class="title">Wartości</h2>
-  <p class="text">Dbamy o klienta i budujemy relację opartą na zufaniu. Dokładamy wszelkich starań podkreślić w tworzonych projektach wartości, które cenimy.</p>
+  <p class="text">Dbamy o klienta i budujemy relację opartą na zaufaniu. Dokładamy wszelkich starań by podkreślić w tworzonych projektach wartości, które cenimy.</p>
   <div class="value-box">
     <h3 class="title title--thin">Kreatywność</h3>
     <div class="wrapper">

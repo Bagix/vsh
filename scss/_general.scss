@@ -78,6 +78,12 @@ header,
     padding-bottom: 120px;
   }
 
+  &--with-img {
+    @include breakpoint('large-up') {
+      margin-top: 170px;
+    }
+  }
+
   .head-1 {
     font-size: 36px;
     line-height: 42px;

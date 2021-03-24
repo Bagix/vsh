@@ -54,13 +54,13 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         Aplikacje wirtualnej rzeczywistości mogą przyjmować różnorodne formy. 
         Zobacz jakie projekty zrealizowaliśmy!
       </p>
-      <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link regular-case">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link regular-case">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
     </div>
     <div class="container training">
         <h3 class="slogan">Pomagamy szkolić pracowników zdalnie, bezpiecznie i efektywnie</h3>
     </div>
     <div class="container-max box360">
-      <iframe class="photo360"src="https://momento360.com/e/u/1d4d59e3bdd9493c8ea1dcfe66b7bb5c?utm_campaign=embed&utm_source=other&heading=311.48&pitch=3.09&field-of-view=75&size=medium&wheel=false"> </iframe>
+      <iframe allowfullscreen="true" class="photo360"src="https://momento360.com/e/u/1d4d59e3bdd9493c8ea1dcfe66b7bb5c?utm_campaign=embed&utm_source=other&heading=311.48&pitch=3.09&field-of-view=75&size=medium&wheel=false"> </iframe>
     </div>
 
     <div class="container two-cols">
@@ -91,7 +91,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         <div class="text-square">
           7 gier i aplikacji fitnessowych dla studia EMS&VR. Trening w połączeniu z technologią staje się ciekawszy i pozwala osiągać więcej.
         </div>
-        <a href="" class="link regular-case hp-link">virtual gym <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+        <a href="http://vrgym.fit/pl/" class="link regular-case hp-link">virtual gym <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
       </div>
       </div>
     </div>
@@ -130,7 +130,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
         Aplikacje rozszerzające rzeczywistość mogą przyjmować 
         różnorodne formy. Zobacz jakie projekty zrealizowaliśmy!
       </p>
-      <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link">Sprawdz nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link regular-case">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
     </div>
     <div class="container-max equipment">
       <picture>
@@ -146,7 +146,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           <img src="<?php echo get_template_directory_uri().'/images/telefon.png' ?>" alt="odkurzacz">
           <div class="holder-hp">
             <div class="text-square">Sprawdź jak pasują do Twojej przestrzeni urządzenia Groupe SEB: Tefal i KRUPS, poznaj ich atuty oraz dowiedz się jak ich używać.</div>
-            <a href="" class="link regular-case hp-link">homearound <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+            <a href="http://homearoundapp.pl/" class="link regular-case hp-link">homearound <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
           </div>
         </div>
       </div>
@@ -195,7 +195,7 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
     <h3 class="slogan">
       Możemy znacznie więcej
     </h3>
-    <a href="" class="btn btn--reverse">Zobacz nasze projekty</a>
+    <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="btn btn--reverse">Zobacz nasze projekty</a>
   </div>
 </section>
 
@@ -260,15 +260,15 @@ Włóż gogle i odkryj, poznaj, przeszkól lub chwyć telefon i zobacz czego nie
           <p><a href="tel:+48518184154">+48 518 184 154</a></p>
         </div>
         <div class="col-right">
-          <p>ul. Piotrkowska 120</p>
-          <p>90-006 Łódź</p>
+          <p>ul.Kościuszki 29 lok. 3</p>
+          <p>90-418 Łódź</p>
         </div>
       </div>
-      <a href="" class="link regular-case">Darmowa wycena <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+      <a href="<?php echo get_permalink( get_page_by_title( 'kontakt' ) )?>" class="link regular-case">Darmowa wycena <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
       <div class="social-media">
-        <a href="" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/instagram.png' ?>" alt="instagram"></a>
-        <a href="" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/linkedin.png' ?>" alt="linkedin"></a>
-        <a href="" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/facebook.png' ?>" alt="facebook"></a>
+        <a href="https://www.instagram.com/vhsoft.pl/" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/instagram.png' ?>" alt="instagram"></a>
+        <a href="https://www.linkedin.com/company/vhsoft-virtual-software-house/about/" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/linkedin.png' ?>" alt="linkedin"></a>
+        <a href="https://www.facebook.com/vhsoftlodz" target="_blank"><img src="<?php echo get_template_directory_uri().'/images/facebook.png' ?>" alt="facebook"></a>
       </div>
 
     </div>

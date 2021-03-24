@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header exp-header container">
+<header class="header header--with-img exp-header container">
   <h1 class="head-1">Doświadczenia VR</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/exp/exp.png' ?>" alt="">
@@ -44,7 +44,7 @@
     <p class="text--tall tall1">Mobilne</p>
     <p class="text--tall tall2">Stacjonarne</p>
     <div class="image-box">
-      <img src="<?php echo get_template_directory_uri().'/images/exp/choice.png' ?>" alt="wybor">
+      <img src="<?php echo get_template_directory_uri().'/images/exp/choice.svg' ?>" alt="wybor">
     </div>
     <p class="text text1">Brak kabli i dodatkowych urządzeń. Moc VR zamknięta w przenośnych goglach.</p>
     <p class="text text2">Niesamowita wydajność i świetna jakość grafiki dzięki połączeniu z komputerem</p>
@@ -64,7 +64,7 @@
 </section>
 
 <div class="container-max box360 exp-360">
-  <iframe class="photo360"src="https://momento360.com/e/u/d1ddb2dedcce40ff93b076c8c82ed7d8?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"> </iframe>
+  <iframe allowfullscreen="true" class="photo360"src="https://momento360.com/e/u/d1ddb2dedcce40ff93b076c8c82ed7d8?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"> </iframe>
 </div>
 
 

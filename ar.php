@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header ar-header container">
+<header class="header header--with-img ar-header container">
   <h1 class="head-1">Rzeczywistość rozszerzona</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/ar/ar.png' ?>" alt="">
@@ -13,7 +13,7 @@
 <section class="ar-service container about-service">
   <p class="eyebrow">Podstawy</p>
   <h2 class="title title--letter-space">O technologii</h2>
-  <p class="single-text">VR pozwala wejść w trójwymiarową rzeczywistość. Wyświetlane w goglach obrazy wydają się stać obok nas. Doświadcz w wirtualnym świecie prawdziwych emocji.</p>
+  <p class="single-text">AR dodaje do otaczającego nas świata cyfrowe obiekty. Może to być angażujący filtr na twarz, prezentacja urządzenia do kupienia, gra lub przydatne informacje wyświetlane na rzeczywistym przedmiocie.</p>
 </section>
 
 <section class="container ar-devices">
@@ -70,7 +70,7 @@
         </div>
         <div class="wrapper">
           <p class="sub-title">Instrukcje</p>
-          <p class="text">Pokazanie, tłumaczy lepiej niż instrukcja na kartce. Dodaj urządzenie do realnego świata i zaprezentuj działanie animacjami.</p>
+          <p class="text">Pokazanie tłumaczy lepiej niż instrukcja na kartce. Dodaj urządzenie do realnego świata i zaprezentuj działanie animacjami.</p>
         </div>
       </div>
       <div class="option-box swap">

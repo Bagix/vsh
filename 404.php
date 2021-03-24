@@ -23,8 +23,8 @@
         <div class="note">
             <a href="mailto:hello@vhsoft.pl">hello@vhsoft.pl</a>
             <a href="tel:+48660734273">+48 660 734 273</a>
-            <p>ul.Piotrkowska 120</p>
-            <p>90-006 Łódź</p>
+            <p>ul.Kościuszki 29 lok. 3</p>
+            <p>90-418 Łódź</p>
         </div>
         <div class="fb">
             <a href="https://www.facebook.com/vhsoftlodz" target="_blank">

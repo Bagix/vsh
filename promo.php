@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header promo-header container">
+<header class="header header--with-img promo-header container">
   <h1 class="head-1">Reklama</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/promo/promo.png' ?>" alt="">
@@ -34,7 +34,7 @@
       Standardowe reklamy działają coraz gorzej albo w ogóle są nieskuteczne?
       Spróbuj nowych, immersyjnych form. Wciągnij odbiorców w świat nieznanych wrażeń.
     </p>
-    <a href="" class="link">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+    <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
   </div>
 </section>
 

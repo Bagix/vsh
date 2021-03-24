@@ -52,7 +52,7 @@ jQuery("document").ready(function() {
       }
   }
 
-  jQuery("#nav > ul > li.sub-menu-trigger > a").on("click", function(e) {
+  jQuery("#nav ul > li.sub-menu-trigger > a").on("click", function(e) {
     e.preventDefault();
   });
 
@@ -62,14 +62,14 @@ jQuery("document").ready(function() {
     }, 800)
   })
 
-  jQuery("#switcher").on('click', function() {
-    if (readCookie("VR-mode") === "1") {
-      document.cookie = "VR-mode=0";
-      showAR();
-    } else {
-      document.cookie = "VR-mode=1";
-      showVR();
-    }
+  jQuery('#vr-btn').on('click', function() {
+    document.cookie = "VR-mode=1";
+    showVR();
+  })
+
+  jQuery('#ar-btn').on('click', function() {
+    document.cookie = "VR-mode=0";
+    showAR();
   })
 
   jQuery(".mobile-nav-bar .trigger").on("click", function() {
@@ -107,10 +107,10 @@ jQuery("document").ready(function() {
     jQuery("#vr-box").removeClass("show");
   }
 
-  jQuery('.wpcf7-list-item > label > input').prop('checked', false);
+  jQuery('.col-2 .wpcf7-list-item > label > input').prop('checked', false);
 
-  jQuery('.wpcf7-list-item > label > input').on('change', function() {
-    jQuery('.wpcf7-list-item > label ').removeClass("selected");
+  jQuery('.col-2 .wpcf7-list-item > label > input').on('change', function() {
+    jQuery('.col-2 .wpcf7-list-item > label ').removeClass("selected");
     if (this.checked) {
       var label = this.closest('label')
       jQuery(label).addClass("selected")

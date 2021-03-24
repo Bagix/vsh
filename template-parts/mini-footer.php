@@ -11,7 +11,7 @@
       <p>90-418 Łódź</p>
     </div>
     <div class="col-right">
-      <p>mapa strony</p>
+      <p><a href="./sitemap.xml">mapa strony</a></p>
       <div class="wrapper">
         <div class="col-1">
           <a href="">Strona główna</a>
@@ -32,6 +32,6 @@
       <p><a href="tel:+48518184154">+48 518 184 154</a></p>
       <p>90-006 Łódź</p>
     </div>
-    <a href="" class="link">Darmowa wycena <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
+    <a href="<?php echo get_permalink( get_page_by_title( 'kontakt' ) )?>" class="link">Darmowa wycena <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a>
   </div>
 </div>

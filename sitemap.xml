@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://beta.vhsoft.pl/pl/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/o-nas/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/uslugi/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/doswiadczenia-vr/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/szkolenia-vr/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/rzeczywistosc-rozszerzona/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/modelowanie-3d/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/gry/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/reklama/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/nasze-projekty/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://beta.vhsoft.pl/pl/kontakt/</loc>
+  <lastmod>2021-03-23T16:28:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

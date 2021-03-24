@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<header class="header models-header container">
+<header class="header header--with-img models-header container">
   <h1 class="head-1">Modelowanie 3D</h1>
   <div class="image-box">
     <img src="<?php echo get_template_directory_uri().'/images/models/models.png' ?>" alt="">
@@ -34,12 +34,12 @@
     </div>
   </div>
   <p class="text">Przestrzenie i obiekty 3D mogą wyglądać jak wyjęte z naszego otoczenia, z innej galaktyki lub przenosić nas do świata z kreskówek.</p>
-  <a href="" class="link">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a></a>
+  <a href="<?php echo get_permalink( get_page_by_title( 'nasze projekty' ) )?>" class="link">Sprawdź nasze projekty <img class="arrow" src="<?php echo get_template_directory_uri().'/images/arrow-right-black.png' ?>" alt="arrow-right"></a></a>
 </section>
 
 <section class="container models-projects">
   <p class="eyebrow">Wiele sposobów projektowania</p>
-  <h2 class="title">Rzeczywiste, czy całkowicie umowne?</h2>
+  <h2 class="title">Rzeczywiste czy stylizowane?</h2>
   <p class="text">Możemy stworzyć cyfrowe modele z całą ich złożonością lub uprościć do kanciastych brył, aby zyskać nierzeczywisty oraz oszczędny wygląd.</p>
   <div class="wrapper">
     <div class="image-box">

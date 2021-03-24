@@ -7,6 +7,12 @@
       padding-bottom: 180px;
     }
 
+    .col-1 {
+      .input {
+        margin-top: 70px;
+      }
+    }
+
     .wpcf7-form {
       @include breakpoint('large-up') {
         display: grid;
@@ -49,7 +55,7 @@
       border-top: none;
       border-right: none;
       border-left: none;
-      margin: 25px 0 45px;
+      margin-top: 25px;
       border-bottom: 2px solid $black;
     }
 
@@ -141,7 +147,7 @@
       }
 
       .acpt {
-        + span {
+        span {
           font-size: 14px;
         }
       }

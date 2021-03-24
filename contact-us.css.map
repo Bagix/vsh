@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,AAAC,CACV,gBAAgB,CAAE,gDAAgD,CAClE,eAAe,CAAE,KAAK,CACtB,iBAAiB,CAAE,SAAS,CAC5B,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,MAAM,CAShB,AAdD,AAUE,WAVS,CAUT,MAAM,AAAC,CACL,MAAM,CAAE,WAAW,CAEpB",
-    "sources": [
-        "scss/contact-us.scss"
-    ],
-    "names": [],
-    "file": "contact-us.css"
-}
